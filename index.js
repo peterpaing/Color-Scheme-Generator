@@ -15,3 +15,12 @@ document.getElementById('generate-btn').addEventListener('click', function(e){
      document.getElementById('colorImage').innerHTML = colors.join('')
     })
 })
+
+document.getElementById('colorImage').addEventListener('click', (e) => {
+    const container = e.target.closest('.color-container')
+    if (!container) return
+
+    const hex = container.querySelector('p').textContent
+    navigator.clipboard.writeText(hex)
+    alert(`${hex} copied!`)
+})
