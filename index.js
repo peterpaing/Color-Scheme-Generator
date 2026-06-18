@@ -7,7 +7,7 @@ document.getElementById('generate-btn').addEventListener('click', function(e){
     .then(res => res.json())
     .then(data => {
         let colors = data.colors.map(color=>{
-        return `<div class="color-container">
+        return `<div class="color-container" data-color="${color.hex.value}>
         <img src="${color.image.bare}">
         <p>${color.hex.value}</p>
         </div>`
