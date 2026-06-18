@@ -1,8 +1,24 @@
 body{
     font-family: 'Inter',sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
     background-color:#1F2937;
     width:550px;
     height: 550px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
 }
 
 input{
@@ -49,3 +65,4 @@ button:hover {
     background-color: #4A5B73; 
     cursor: pointer;         
 }
+
