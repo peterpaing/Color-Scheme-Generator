@@ -1,6 +1,8 @@
 body{
     font-family: 'Inter',sans-serif;
     background-color:#1F2937;
+    width:550px;
+    height: 550px;
 }
 
 input{
@@ -15,10 +17,7 @@ select{
     border-radius: 6px;
     border:none;
     outline: 1px solid #D1D5DB;
-    padding-top: 9px;
-    padding-right: 13px;
-    padding-bottom: 9px;
-    padding-left: 13px;
+    padding: 9px 13px;
     background-color: #1F293A;
     color: #D5D4D8;
     -webkit-appearance: none;
@@ -36,10 +35,17 @@ button{
     width: 123px;
     height: 42px;
     border-radius: 4px;
-    padding: 13px 11px 13px 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 12px;
     border: none;
     background-color: #3D4B60;
     color: #D5D4D8;
+}
+
+button:hover {
+    background-color: #4A5B73; 
+    cursor: pointer;         
 }
