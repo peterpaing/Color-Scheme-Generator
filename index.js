@@ -6,8 +6,8 @@ document.getElementById('generate-btn').addEventListener('click', function(e){
     fetch(`https://www.thecolorapi.com/scheme?hex=${color.slice(1)}&mode=${scheme}&count=5`)
     .then(res => res.json())
     .then(data => {
-        let colors = data.colors.map(color=>{
-        return `<div class="color-container" data-color="${color.hex.value}>
+         let colors = data.colors.map(color=>{
+        return `<div class="color-container" >
         <img src="${color.image.bare}">
         <p>${color.hex.value}</p>
         </div>`
